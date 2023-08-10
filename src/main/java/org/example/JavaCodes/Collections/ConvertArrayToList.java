@@ -1,7 +1,6 @@
 package org.example.JavaCodes.Collections;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class ConvertArrayToList {

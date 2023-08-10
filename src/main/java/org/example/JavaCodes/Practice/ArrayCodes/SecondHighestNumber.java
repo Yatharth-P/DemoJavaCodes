@@ -1,4 +1,4 @@
-package org.example.JavaCodes.ArrayCodes;
+package org.example.JavaCodes.Practice.ArrayCodes;
 
 public class SecondHighestNumber {
 

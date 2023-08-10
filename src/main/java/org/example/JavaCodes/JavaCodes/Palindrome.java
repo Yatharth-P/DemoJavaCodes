@@ -10,7 +10,7 @@ public class Palindrome {
 
         for(int i=str1.length()-1; i>=0; i--)
         {
-            str3 = String.valueOf(str1.charAt(i));
+            str3 = str3 + str1.charAt(i);
         }
 
         System.out.println("Palindrome" + str1.equals(str3));

@@ -1,8 +1,5 @@
 package org.example.JavaCodes.JavaCodes;
 
-import java.sql.SQLOutput;
-import java.util.Locale;
-
 public class frequencyOfVowels {
 
     public static void main(String args[])
