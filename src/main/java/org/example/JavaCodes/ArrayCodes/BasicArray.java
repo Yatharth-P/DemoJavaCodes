@@ -8,7 +8,6 @@ public class BasicArray {
         int[] arr1 = {1,2,3,4,5};
         int[] arr2 = new int[arr1.length];
 
-
         for(int i=0; i<arr1.length; i++)
         {
             arr2[i] = arr1[i];
@@ -18,6 +17,5 @@ public class BasicArray {
         {
             System.out.println("New array is " + arr2[i]);
         }
-
     }
 }

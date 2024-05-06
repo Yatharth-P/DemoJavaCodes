@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumTest {
@@ -18,17 +20,15 @@ public class SeleniumTest {
     @BeforeTest
     public void setup()
     {
-        System.setProperty("webdriver.chrome.driver","src/Drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/Drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(15,TimeUnit.SECONDS);
     }
 
     @Test
-    public void launchWebsite()
-    {
+    public void launchWebsite() throws InterruptedException {
         driver.manage().window().maximize();
-        driver.get("https://mvnrepository.com/artifact/io.rest-assured/rest-assured");
+        driver.get("https://www.google.com/");
+        Thread.sleep(10000);
     }
 
     @AfterTest
